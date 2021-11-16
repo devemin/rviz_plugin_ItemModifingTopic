@@ -1,4 +1,4 @@
-# rviz_plugin_ItemModifingTopic
+# (rviz plugin) ItemModifingTopic
 
 <br>
 
@@ -6,21 +6,36 @@
 
 rviz 用のプラグインです。
 
-文字列を送ることで、rviz のアイテムの「チェックボックス」や「テキスト」を簡単に、動的に変更できます。
+文字列を Publish すると、rviz のアイテムの「チェックボックス」や「テキスト」を**簡単**に、**動的**に変更できます。
 
-**簡単に、すぐに、** というのがコンセプトです。
+```bash
+Topic: /rviz_itemmod 宛に、
+
+Type: std_msgs/String で、
+
+String.data 内に 'アイテム名,サブアイテム名,true/false/文字列'
+
+といった形で文字列を並べ、 Publish して使います。
+
+```
+
+If you publish the string, you can modify the rviz's item!
 
 <br>
 <br>
 
 ## System - 環境
 
+rviz
+
 Ubuntu 18.04 / Windows 10 (Melodic) にてチェック
 
+私は生粋の ROS 初心者です。
+
 <br>
 <br>
 
-## Installation - インストール
+## Easy Installation - 簡単インストール
 
 ```bash
 $ cd ~/catkin_ws/src
@@ -39,7 +54,7 @@ $
 
 /rviz_itemmod ( type: std_msgs/String ) というトピックが出来上がります。
 
-そのトピックに対して 文字列を下記体裁で pub して下さい。
+そのトピックに対して 文字列を下記体裁で並べて pub して下さい。
 
 例：
 
@@ -80,7 +95,9 @@ $
 
 ## Sample script - サンプルスクリプト
 
-また、Python (rospy) から Topic を送るサンプルスクリプトも置いておきます。（ src/testStringPub.py ）
+また、Python (rospy) から Topic を送るサンプルスクリプトも置いておきます。
+
+（ src/testStringPub.py ）
 
 
 <br>
