@@ -78,7 +78,7 @@ rviz 画面で「Add」->「ItemModifingTopic」がありますので、追加�
 
 'Grid,false,'
 
-'rvizアイテム名,サブアイテム名,指定文字列'
+'rvizアイテム名,サブアイテム名,指定文字列,'
 
 指定文字列は、true/True/false/False または 任意の文字列
 
