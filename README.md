@@ -29,6 +29,9 @@ rviz のアイテムの「チェックボックス」や「テキスト」を**�
 
 If you publish the string, you can modify the rviz's item!
 
+
+![rec image](image/rec.gif)
+
 <br>
 <br>
 
@@ -57,6 +60,10 @@ $
 <br>
 
 # How to use - 使い方
+
+![abstract image](image/abstract.png)
+
+![add image](image/pic_add.png)
 
 rviz 画面で「Add」->「ItemModifingTopic」がありますので、追加すると、
 
