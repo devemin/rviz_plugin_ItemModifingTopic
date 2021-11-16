@@ -109,13 +109,13 @@ rviz 画面で「Add」->「ItemModifingTopic」がありますので、追加�
 
 ```bash
 $ //RobotModel の表示を消す
-$ rostopic pub -1 /rviz_itemmod std_msgs/String "data: 'RobotModel,Visual Enabled,false'" 
+$ rostopic pub -1 /rviz_itemmod std_msgs/String "data: 'RobotModel,Visual Enabled,false,'" 
 $ 
 $ //RobotModel の表示を消したのを戻す
-$ rostopic pub -1 /rviz_itemmod std_msgs/String "data: 'RobotModel,Visual Enabled,true'" 
+$ rostopic pub -1 /rviz_itemmod std_msgs/String "data: 'RobotModel,Visual Enabled,true,'" 
 $ 
 $ //Grid を消す
-$ rostopic pub -1 /rviz_itemmod std_msgs/String "data: 'Grid,false'" 
+$ rostopic pub -1 /rviz_itemmod std_msgs/String "data: 'Grid,false,'" 
 $ 
 ```
 
