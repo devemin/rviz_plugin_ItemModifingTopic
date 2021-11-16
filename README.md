@@ -126,8 +126,7 @@ $
 
 また、Python (rospy) から Topic を送るサンプルスクリプトも置いておきます。
 
-（ src/testStringPub.py ）
-
+[src/testStringPub.py](src/testStringPub.py)
 
 <br>
 <br>
