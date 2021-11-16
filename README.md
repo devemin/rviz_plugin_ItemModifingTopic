@@ -6,18 +6,26 @@
 
 rviz 用のプラグインです。
 
-文字列を Publish すると、rviz のアイテムの「チェックボックス」や「テキスト」を**簡単**に、**動的**に変更できます。
+これを入れておくと、文字列を Publish する事で、
+
+rviz のアイテムの「チェックボックス」や「テキスト」を**簡単**に、**動的**に変更できます。
+
+<br>
 
 ```bash
-Topic: /rviz_itemmod 宛に、
+1-minute to start using:
 
-Type: std_msgs/String で、
+　　Topic: /rviz_itemmod 宛に、
 
-String.data 内に 'アイテム名,サブアイテム名,true/false/文字列'
+　　Type: std_msgs/String で、
 
-といった形で文字列を並べ、 Publish して使います。
+　　String.data 内に 'アイテム名,サブアイテム名,true/false/文字列'
+
+　　といった形で文字列を並べ、 Publish して使います。
 
 ```
+
+<br>
 
 If you publish the string, you can modify the rviz's item!
 
@@ -30,7 +38,7 @@ rviz
 
 Ubuntu 18.04 / Windows 10 (Melodic) にてチェック
 
-私は生粋の ROS 初心者です。
+私は生粋の ROS 初心者です…。
 
 <br>
 <br>
@@ -50,14 +58,13 @@ $
 
 # How to use - 使い方
 
-その後、rviz 画面で「Add」->「ItemModifingTopic」がありますので、追加すると、
+rviz 画面で「Add」->「ItemModifingTopic」がありますので、追加すると、
 
-/rviz_itemmod ( type: std_msgs/String ) というトピックが出来上がります。
+/rviz_itemmod ( type: std_msgs/String ) というトピックが出来上がります。（変更可）
 
 そのトピックに対して 文字列を下記体裁で並べて pub して下さい。
 
-例：
-
+### 例：
 
 ```bash
 'RobotModel,Visual Enabled,false,'
@@ -68,11 +75,22 @@ $
 
 指定文字列は、true/True/false/False または 任意の文字列
 
-# 文字列の注意点：
+```
+
+### 文字列の注意点：
+
+```bash
+・カンマを増やして、ツリー構造の下にもアクセスできます
+
+・チェックボックスとテキストだけでなく、カラータイプ（255; 255; 255 等の文字列で）、
+　選択式リストボックス（文字列指定で）も変更できます。（サンプルスクリプト参照）
+
+・rviz 上で変更できない項目は、この plugin でも変更できません。
+
 ・余分な空白はチェックしていません。詰めて下さい。
 
 ・文字列の最後には「, (カンマ)」を入れてください。
-　無くても動くものもありますが、たとえば最後の文字列を空白にする場合は、末尾が ,, とカンマが２個続きます。
+　無くても動くものもありますが、たとえば最後の文字列を空白にする場合は、末尾が ,, とカンマを２個続けます。
 
 ・厳密なデータチェックはしてないので、挙動を見ながらお使いください。
 　（変なデータが適応されると、rviz が落ちます）
@@ -114,7 +132,7 @@ MIT Liscense
 <br>
 <br>
 
-## Thanks
+## Thanks !!!
 
 ●オリジナル Rviz Plugin をつくってみる 2. ROS1で .ui ファイルを使ってオリジナルパネルをつくる ( [by RyodoTanaka](https://twitter.com/RyodoTanaka) )
 
