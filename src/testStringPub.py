@@ -5,6 +5,14 @@ from std_msgs.msg import String
 
 
 strlist = [  \
+    "Grid,false,", \
+    "Grid,true,", \
+    "Grid,false,", \
+    "Grid,true,", \
+    "Grid,false,", \
+    "Grid,true,", \
+    "Grid,false,", \
+    "Grid,true,", \
     "RobotModel,false,", \
     "RobotModel,true,", \
     "RobotModel,Visual Enabled,false,", \
