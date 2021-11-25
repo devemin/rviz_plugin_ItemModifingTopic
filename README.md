@@ -39,7 +39,11 @@ If you publish the string, you can modify the rviz's item!
 
 rviz
 
-Ubuntu 18.04 / Windows 10 (Melodic) にてチェック
+Ubuntu 18.04 / Windows 10 (Melodic) 
+
+Ubuntu 18.04 / Jetson Nano (JetPack 4.1.1) (Melodic)
+
+にてチェック
 
 私は生粋の ROS 初心者です…。
 
