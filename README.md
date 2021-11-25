@@ -2,6 +2,8 @@
 
 <br>
 
+![rec image](image/rec.gif)
+
 ## What's this ? - これは何？
 
 rviz 用のプラグインです。
@@ -30,7 +32,6 @@ rviz のアイテムの「チェックボックス」や「テキスト」を**�
 If you publish the string, you can modify the rviz's item!
 
 
-![rec image](image/rec.gif)
 
 <br>
 <br>
