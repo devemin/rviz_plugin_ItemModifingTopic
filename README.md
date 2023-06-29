@@ -136,9 +136,9 @@ $
 <br>
 <br>
 
-## Liscense - ライセンス
+## License - ライセンス
 
-MIT Liscense
+MIT License
 
 <br>
 <br>
